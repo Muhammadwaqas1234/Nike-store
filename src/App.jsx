@@ -6,18 +6,15 @@ import PaymentPage from "./components/payment";
 import Layout from "./components/Layout"; 
 import ShoeDetails from "./components/Details";
 
-
 function App() {
   return (
-    <Router>
+    <Router basename="/Nike-store">  {/* Add the base path here */}
       <Routes>
         <Route path="/store" element={<Store />} />
-        <Route path="payment" element={<PaymentPage />} />
+        <Route path="/payment" element={<PaymentPage />} />  {/* Ensure full path */}
         <Route path="/details" element={<ShoeDetails />} />
 
-        <Route path="/" element={<Layout />}>
-          
-        </Route>
+        <Route path="/" element={<Layout />} />
       </Routes>
     </Router>
   );
