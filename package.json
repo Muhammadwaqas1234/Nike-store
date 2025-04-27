@@ -2,12 +2,14 @@
   "name": "nike",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Muhammadwaqas1234.github.io/Nike-store/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
